@@ -68,11 +68,11 @@ function Project() {
                             src={project.mainImage.asset.url}
                             alt={project.mainImage.alt}
 
-                            className="rounded "
-                            style={{
-                              maxHeight:"300px",
-                              maxWidth:"300px",
-                            }}
+                            className="rounded object-contain"
+                            // style={{
+                            //   maxHeight:"300px",
+                            //   maxWidth:"300px",
+                            // }}
                             />
                            
                              </div>  
