@@ -31,6 +31,8 @@ function Project() {
         .catch(console.error);
     },[])
 
+    
+
     return (
         <main className="bg-green-100 min-h-screen p-12">
             <section className="container mx-auto">
@@ -74,20 +76,20 @@ function Project() {
                             />
                            
                              </div>  
-                           
-                            <a href={`${project.hostlink}`} rel="noopener noreferrer" target="_blank" className="text-red-500  mt-3font-bold hover:underline hover:text-red-400 ">
+
+                         
+                           { project.hostlink && <a href={`${project.hostlink}`} rel="noopener noreferrer" target="_blank" className="text-red-500  mt-3font-bold hover:underline hover:text-red-400 ">
                             View Project Online:{" "}
                             <span role = "img" aria-label="right pointer"></span>
                             </a>
-                           
-                        
-
+                           }
+ 
                             <a href={`${project.github}`} rel="noopener noreferrer" target="_blank" className="text-red-500  mt-3font-bold hover:underline hover:text-red-400 ">
                             View Project Github:{" "}
                             <span role = "img" aria-label="right pointer"></span>
                             </a>
                             <p className="my-6 text-md text-gray-800 leading-relaxed prose">{project.description}</p>
-                              
+                            
                         </div>
 
                       
